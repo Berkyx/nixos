@@ -1,0 +1,73 @@
+# NixOS Configuration .gitignore
+
+# Nix build results
+result
+result-*
+
+# Nix temporary files
+*.tmp
+.nix-*
+
+# SOPS/Age keys and decrypted secrets (keep encrypted versions)
+keys.txt
+age.key
+*.key
+!*.pub
+secrets/decrypted/
+secrets/temp/
+secrets/secrets.yaml
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# System files
+Thumbs.db
+.Trash-*
+
+# Logs
+*.log
+logs/
+
+# Temporary and cache directories
+.cache/
+tmp/
+temp/
+
+# SSH keys (if any are generated locally)
+ssh_host_*
+*.pem
+*.p12
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# Build artifacts
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Personal notes or TODO files
+TODO
+NOTES
+notes.md
+todo.md 
